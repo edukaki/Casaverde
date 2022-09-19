@@ -1,0 +1,39 @@
+.l-footer{
+    background-color: var(--white);
+    background-image: url(../../img/splash-botton.svg);
+    background-position: top -11rem right;
+    background-repeat: no-repeat;
+    
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.l-footer__logo{
+    margin-bottom: 1.25rem;
+    max-width: 11.125rem;
+}
+
+.l-footer__social{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.l-footer__social-media{
+    display: inline-block;
+
+    height: 1.625rem;
+    margin-right: 1.625rem;
+    width: 1.625rem;
+}
+
+.l-footer__address{
+    margin-bottom: 2rem;
+}
+
+.l-footer__address-title{
+    color: var(--black);
+    display: block;
+    font-size: var(--size-title--span);
+    font-weight: var(--weight-title--span);
+    margin-bottom: .5rem;
+}

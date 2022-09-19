@@ -1,0 +1,23 @@
+.call-action{
+    background-image: url(../img/splash-callToAction.svg);
+    background-position: top -4rem right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.call-action__text{
+    width: 12.5rem;
+
+    margin-bottom: 1.55rem;
+}
+
+.call-action__image{
+    position: absolute;
+    top: 1.25rem;
+    right: 0;
+}
+
+.call-action__form{
+    position: relative;
+    z-index: 2;
+}

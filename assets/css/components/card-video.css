@@ -26,5 +26,11 @@
     top: 50%;
     transform: translate(-50%,-50%);
     width: 4.875rem;
+}
 
+.card-video__title{
+    color: var(--black);
+    font-size: var(--size-title);
+    font-weight: var(--weight-title--span);
+    margin-bottom: .5rem;
 }

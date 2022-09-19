@@ -8,67 +8,181 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="./assets/css/base/base.css">
-    <link rel="stylesheet" href="./assets/css/components/header.css">
     <link rel="stylesheet" href="./assets/css/components/button.css">
+    <link rel="stylesheet" href="./assets/css/call-action.css">
     <link rel="stylesheet" href="./assets/css/components/card.css">
     <link rel="stylesheet" href="./assets/css/components/card-video.css">
     <link rel="stylesheet" href="./assets/css/components/input.css">
     <link rel="stylesheet" href="./assets/css/components/item.css">
     <link rel="stylesheet" href="./assets/css/components/product.css">
+    <link rel="stylesheet" href="./assets/css/components/header.css">
+    <link rel="stylesheet" href="./assets/css/how-to-do.css">
+    <link rel="stylesheet" href="./assets/css/components/footer.css">
     <title>Casa Verde | Home</title>
 </head>
 <body> 
+    <!-- HEADER STRUCTURE -->
     <header class="container l-header">
         <img src="./assets/img/logo.svg" alt="logo da Casaverde" class="l-header__logo">
-        <a href="#" aria-label="Meu Carrinho"><img src="./assets/img/icons/cart-yellow.svg" alt="icone do carrinho de compras" class="l-header__cart"></a></header>
-    <main class="container">
-        <section>
-            <h1 class="title align--left">Sua casa com as
+        <a href="#" aria-label="Carrinho de compras">
+            <img src="./assets/img/icons/cart-yellow.svg" alt="icone do carrinho de compras" class="l-header__cart">
+        </a>
+    </header>
+    <!-- HEADER END -->
+
+    <main>
+        <section class="container call-action">
+            <!-- TITLE STRUCTURE -->
+            <h2 class="title">Sua casa com as
                 <span class="title--span">melhores plantas</span>
-            </h1>
-            <input type="email" class="c-input c-input--icon c-input--email" placeholder="Insira seu e-mail" aria-label="Insira seu e-mail">
-            <button class="c-button">Assinar newsletter</button>
-        </section>
-
-        <section class="c-card">
-            <h2 class="title align--center">Como conseguir
-                <span class="title--span">minha planta</span>
             </h2>
-            <ul class="item__list">
-                <li class="item">
-                    <span class="item__icon icon--mouse"></span>
-                    <p>Escolha suas plantas</p>
-                </li>
-                <li class="item">
-                    <span class="item__icon icon--cart"></span>
-                    <p>Faça seu pedido</p>
-                </li>
-                <li class="item">
-                    <span class="item__icon icon--truck"></span>
-                    <p>Aguarde na sua casa</p>
-                </li>
-            </ul>
+            <!-- TITLE END -->
+            <p class="call-action__text text">Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca</p>
+            <img src="./assets/img/plant-callToAction.png" class="call-action__image" alt="Foto da planta">
+            <form class="call-action__form" action="#">
+                <input type="email" class="c-input c-input--icon c-input--email" placeholder="Insira seu e-mail" aria-label="Insira seu e-mail">
+                <button class="c-button">Assinar newsletter</button>
+            </form>
         </section>
-
-        <section>
+        <!-- HOW-TO-DO SECTION STRUCTURE -->
+        <section class="l-how-to-do container">
+            <article class="c-card">
+                <h2 class="title align--center">Como conseguir
+                    <span class="title--span">minha planta</span>
+                </h2>
+                <ul class="item__list">
+                    <li class="item">
+                        <span class="item__icon icon--mouse"></span>
+                        <p>Escolha suas plantas</p>
+                    </li>
+                    <li class="item">
+                        <span class="item__icon icon--cart"></span>
+                        <p>Faça seu pedido</p>
+                    </li>
+                    <li class="item">
+                        <span class="item__icon icon--truck"></span>
+                        <p>Aguarde na sua casa</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!-- HOW-TO-DO SECTION END -->
+        <section class="container l-sales">
             <h2 class="title align--center">Conheça nossos
                 <span class="title--span">produtos</span>
             </h2>
-            <article class="product">
-                <img src="./assets/img/produto-01.png" alt="Foto do produto" class="product__image">
-                <div class="product__content">
-                    <h3 class="product__title title--span">Ajuga reptans</h3>
-                    <p class="product__price">R$ 20,00</p>
-                    <a href="" class="product__buy">Comprar<span class="product__buy--icon"></span></a>
-                </div>
-            </article>
+            <!-- PRODUCT COMPONENT AND PRODUCT LIST EXPRESSION
+            ul>li.product*6>img.product__image[src="./assets/img/produto-0$.png" alt="Foto do produto"]+div.product__content>h3.product__title.title--span+p.product__price{R\$ 20,00}+a.product__buy{Comprar}>span.product__buy--icon -->
+            <ul>
+                <li class="product">
+                    <img src="./assets/img/produto-01.png" alt="Foto do produto" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title title--span">Ajuga reptans</h3>
+                        <p class="product__price">R$ 20,00</p>
+                        <a href="" class="product__buy">Comprar<span class="product__buy--icon"></span></a>
+                    </div>
+                </li>
+                <li class="product">
+                    <img src="./assets/img/produto-02.png" alt="Foto do produto" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title title--span">CordylineFruticosa</h3>
+                        <p class="product__price">R$ 20,00</p>
+                        <a href="" class="product__buy">Comprar<span class="product__buy--icon"></span></a>
+                    </div>
+                </li>
+                <li class="product">
+                    <img src="./assets/img/produto-03.png" alt="Foto do produto" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title title--span">Crassula ovata</h3>
+                        <p class="product__price">R$ 20,00</p>
+                        <a href="" class="product__buy">Comprar<span class="product__buy--icon"></span></a>
+                    </div>
+                </li>
+                <li class="product">
+                    <img src="./assets/img/produto-04.png" alt="Foto do produto" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title title--span">Cyperus rotundus</h3>
+                        <p class="product__price">R$ 20,00</p>
+                        <a href="" class="product__buy">Comprar<span class="product__buy--icon"></span></a>
+                    </div>
+                </li>
+                <li class="product">
+                    <img src="./assets/img/produto-05.png" alt="Foto do produto" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title title--span">Delairea odorata</h3>
+                        <p class="product__price">R$ 20,00</p>
+                        <a href="" class="product__buy">Comprar<span class="product__buy--icon"></span></a>
+                    </div>
+                </li>
+                <li class="product">
+                    <img src="./assets/img/produto-06.png" alt="Foto do produto" class="product__image">
+                    <div class="product__content">
+                        <h3 class="product__title title--span">Datura metel</h3>
+                        <p class="product__price">R$ 20,00</p>
+                        <a href="" class="product__buy">Comprar<span class="product__buy--icon"></span></a>
+                    </div>
+                </li>
+            </ul>
+            <!-- PRODUCT SECTION END -->
         </section>
-        <section>
-            <article class="card-video">
-                <div class="card-video__video"><img src="https://picsum.photos/390/252" alt=""></div>
-            </article>
+
+        <!-- VIDEO SECTION STRUCTURE -->
+        <section class="container">
+            <h2 class="title align--center">Veja aqui os nossos
+                <span class="title--span">vídeos</span>
+            </h2>
+            <ul>
+                <!-- VIDEO CARD COMPONENT -->
+                <li class="card-video container">
+                    <div class="card-video__video"><img src="https://picsum.photos/390/252" alt="Capa do vídeo"></div>
+                    <h3 class="card-video__title">Vídeo ABC</h3>
+                    <p>Publicado em Setembro de 2022</p>
+                </li>
+                <!-- VIDEO CARD COMPONENT -->
+                <li class="card-video container">
+                    <div class="card-video__video"><img src="https://picsum.photos/390/252" alt="Capa do vídeo"></div>
+                    <h3 class="card-video__title">Vídeo ABC</h3>
+                    <p>Publicado em Setembro de 2022</p>
+                </li>
+                <!-- VIDEO CARD COMPONENT -->
+                <li class="card-video container">
+                    <div class="card-video__video"><img src="https://picsum.photos/390/252" alt="Capa do vídeo"></div>
+                    <h3 class="card-video__title">Vídeo ABC</h3>
+                    <p>Publicado em Setembro de 2022</p>
+                </li>
+                <!-- VIDEO CARD COMPONENT -->
+                <li class="card-video container">
+                    <div class="card-video__video"><img src="https://picsum.photos/390/252" alt="Capa do vídeo"></div>
+                    <h3 class="card-video__title">Vídeo ABC</h3>
+                    <p>Publicado em Setembro de 2022</p>
+                </li>
+            </ul>
         </section>
-        
     </main>
+
+    <!-- FOOTER STRUCTURE -->
+    <footer class="container l-footer">
+        <img src="./assets/img/logo.svg" alt="Logo da Casaverde" class="l-footer__logo">
+        <ul class="l-footer__social">
+            <li><a href="#" class="l-footer__social-media" title="Facebook"><img src="./assets/img/icons/facebook.svg" alt="Icone do facebook"></a></li>
+            <li><a href="#" class="l-footer__social-media" title="Twitter"><img src="./assets/img/icons/twitter.svg" alt="Icone do Twitter"></a></li>
+            <li><a href="#" class="l-footer__social-media" title="Instagram"><img src="./assets/img/icons/instagram.svg" alt="Icone do Instagram"></a></li>
+        </ul>
+        <!-- ADDRESS COMPONENT -->
+        <address class="l-footer__address text">
+            <span class="l-footer__address-title">Rio de Janeiro</span>
+            Rua Siqueira Campos, 171, 303<br>
+            Copacabana<br>
+            Telefone: (21) 99876-0099
+        </address>
+        <!-- ADRESS END -->
+        <address class="l-footer__address  text">
+            <span class="l-footer__address-title">São Paulo</span>
+            Rua Anita Garibaldi, 33, 13<br>
+            Sé<br>
+            Telefone: (11) 99875-2201
+        </address>
+    </footer>
+    <!-- FOOTER END -->
 </body>
 </html>
