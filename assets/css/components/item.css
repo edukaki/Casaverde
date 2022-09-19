@@ -1,4 +1,4 @@
-.item-list{
+.item__list{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +21,19 @@
     margin-right: 1rem;
     width: 3.25rem;
 
-    background: 1.375rem no-repeat center;
+    background-size: 1.375rem;
+    background-repeat:  no-repeat;
+    background-position: center;
 }
 
+.icon--mouse{
+    background-image: url(../../img/icons/mouse.svg);
+}
+
+.icon--cart{
+    background-image: url(../../img/icons/cart.svg);
+}
+
+.icon--truck{
+    background-image: url(../../img/icons/truck.svg);
+}

@@ -1,0 +1,30 @@
+.card-video{
+    margin-bottom: 2rem;
+}
+
+.card-video__video{
+    margin-bottom: .5rem;
+    max-height: 17.5rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.card-video__video::before{
+    border-radius: 50%;
+    background-color: var(--white);
+    background-image: url(../../img/icons/play.svg);
+    background-position: center left 55%;
+    background-repeat: no-repeat;
+    background-size: 1.75rem;
+
+    content: '';
+    display: block;
+    height: 4.875rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 4.875rem;
+
+}
