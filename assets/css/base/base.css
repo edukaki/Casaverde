@@ -1,0 +1,49 @@
+@import url(_variables.css);
+@import url(_normalize.css);
+@import url(_reset.css);
+
+body{
+    background: url(../../img/background-texture.png), url(../../img/background-lines.png);
+    background-position: center;
+
+    color: var(--grey);
+    font-family: var(--family-body);
+    font-size: var(--size-body);
+    font-weight: 400;
+}
+
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.title{
+    font-size: var(--size-title);
+}
+
+.title--span{
+    color: var(--black);
+    font-family: var(--family-title);
+    font-size: var(--size-title--span);
+    font-weight: var(--weight-title--span);
+
+    display: block;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+
+.align--left{
+    text-align: left;
+}
+
+.align--right{
+    text-align: right;
+}
+
+.align--center{
+    text-align: center;
+}
+
+.text{
+    line-height: 26px;
+}

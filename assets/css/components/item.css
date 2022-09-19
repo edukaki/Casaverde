@@ -1,0 +1,26 @@
+.item-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item{
+    align-items: center;
+    display: flex;
+
+    margin-bottom: 1rem;
+    
+    width: 15rem;
+}
+
+.item__icon{
+    background-color: var(--mustard);
+    border-radius: 50%;
+    display: block;
+    height: 3.25rem;
+    margin-right: 1rem;
+    width: 3.25rem;
+
+    background: 1.375rem no-repeat center;
+}
+

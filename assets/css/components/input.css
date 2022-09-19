@@ -1,0 +1,22 @@
+.c-input{
+    background-color: var(--white);
+    border: none;
+    box-shadow: 10px 10px 30px var(--black--transparent);
+    box-sizing: border-box;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: 1rem;
+    padding: 1.75rem;
+    width: 100%;
+}
+
+.c-input--icon{
+    background-repeat: no-repeat;
+    background-position: left 1.75rem center;
+    padding-left: 4.25rem;
+}
+
+.c-input--email{
+    background-image: url(../../img/icons/mail.svg);
+}
